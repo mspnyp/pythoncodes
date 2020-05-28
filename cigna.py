@@ -9,9 +9,25 @@ The coverage may have overlap and/or gaps in coverage.
  
 Example data:
 
-class Cov(eff: Int, term: Int)
-
+class Cov(eff: Int, term: Int
 val coverages = List(Cov(1, 20), Cov(21, 30), Cov(15, 25), Cov(28, 40), Cov(50, 60), Cov(61, 200)
+
+Output:
+
+Sorted: [(1, 20), (15, 25), (21, 30), (28, 40), (50, 60), (61, 200)]
+
+(1, 20)
+(1, 25)
+(1, 30)
+(1, 40)
+(50, 60)
+(50, 200)
+
+Longest continuous coverage for: [(1, 20), (21, 30), (15, 25), (28, 40), (50, 60), (61, 200)] 
+
+Longest continuous coverage: 150
+
+
 '''
 
 
